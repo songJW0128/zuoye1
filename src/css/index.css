@@ -225,7 +225,9 @@ header {
 section {
   width: 100%;
   -webkit-flex: 1 1 0%;
-  flex: 1 1 0%; }
+  flex: 1 1 0%;
+  background: #ccc;
+  overflow: hidden; }
   section .imG {
     width: 100%;
     height: 2.66667rem; }
@@ -233,7 +235,8 @@ section {
       width: 100%;
       height: 100%; }
   section .banner {
-    width: 100%; }
+    width: 100%;
+    background: #fff; }
     section .banner .swiper-wrapper {
       width: 100%; }
       section .banner .swiper-wrapper .swiper-slide {
@@ -264,3 +267,62 @@ section {
     section .banner .swiper-pagination-bullet {
       width: 0.26667rem;
       height: 0.26667rem; }
+  section .list {
+    background: #fff;
+    margin-top: 0.34667rem; }
+    section .list > h1 {
+      margin-left: 0.26667rem;
+      height: 1.17333rem;
+      line-height: 1.17333rem;
+      font-size: 0.53333rem;
+      border-bottom: solid 1px #ccc; }
+    section .list .listUl {
+      -webkit-flex: 1 1 0%;
+      flex: 1 1 0%; }
+      section .list .listUl li {
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        padding: 0.26667rem 0.26667rem;
+        border-bottom: solid 1px #000;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box; }
+        section .list .listUl li img {
+          width: 2.45333rem;
+          height: 2.24rem; }
+        section .list .listUl li .box {
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          -webkit-flex-direction: column;
+          flex-direction: column;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          margin-left: 0.26667rem; }
+          section .list .listUl li .box .topList {
+            width: 100%; }
+            section .list .listUl li .box .topList > h1 {
+              font-size: 0.48rem;
+              line-height: 0.8rem; }
+            section .list .listUl li .box .topList > p {
+              font-size: 0.4rem;
+              color: #ccc; }
+          section .list .listUl li .box .bottList {
+            display: flex;
+            /* NEW, Spec - Opera 12.1, Firefox 20+ */
+            display: -webkit-flex;
+            /* NEW - Chrome */
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: space-between;
+            justify-content: space-between; }
+            section .list .listUl li .box .bottList p > span {
+              font-size: 0.48rem;
+              color: #00c3b1; }
+              section .list .listUl li .box .bottList p > span > em {
+                font-size: 0.32rem; }

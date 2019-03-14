@@ -52,6 +52,8 @@ header {
 section {
     width: 100%;
     @include flex;
+    background: #ccc;
+    overflow: hidden;
     .imG {
         width: 100%;
         height: pxTorem(100px);
@@ -62,6 +64,7 @@ section {
     }
     .banner {
         width: 100%;
+        background: #fff;
         .swiper-wrapper {
             width: 100%;
             .swiper-slide {
@@ -94,6 +97,61 @@ section {
         .swiper-pagination-bullet {
             width: pxTorem(10px);
             height: pxTorem(10px);
+        }
+    }
+    .list {
+        background: #fff;
+        margin-top: pxTorem(13px);
+        >h1 {
+            margin-left: pxTorem(10px);
+            height: pxTorem(44px);
+            line-height: pxTorem(44px);
+            font-size: pxTorem(20px);
+            border-bottom: solid 1px #ccc;
+        }
+        .listUl {
+            @include flex;
+            li {
+                @include box_flex;
+                padding: pxTorem(10px) pxTorem(10px);
+                border-bottom: solid 1px #000;
+                @include sizing;
+                img {
+                    width: pxTorem(92px);
+                    height: pxTorem(84px);
+                }
+                .box {
+                    @include box_flex;
+                    @include direction(column);
+                    @include justify(space-between);
+                    margin-left: pxTorem(10px);
+                    .topList {
+                        width: 100%;
+                        >h1 {
+                            font-size: pxTorem(18px);
+                            line-height: pxTorem(30px);
+                        }
+                        >p {
+                            font-size: pxTorem(15px);
+                            color: #ccc;
+                        }
+                    }
+                    .bottList {
+                        @include box_flex;
+                        @include align;
+                        @include justify(space-between);
+                        p {
+                            >span {
+                                font-size: pxTorem(18px);
+                                color: #00c3b1;
+                                >em {
+                                    font-size: pxTorem(12px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
